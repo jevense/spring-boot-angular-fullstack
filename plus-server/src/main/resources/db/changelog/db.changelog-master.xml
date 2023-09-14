@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+	<!--
+		**********************************************************************
+						本文件作为数据库更新统一入口文件
+
+		要求：
+			id 规则：	seq-日期yyyymmdd
+			author 作者：NT用户名
+			context 应用范围：通用版本sql则不用标注，
+				如果是某些省份单独执行则用 context="gd" / context="gd,sh"
+				省份简写如下：广东gd/上海 sh/吉林 jl/福建 fj/江西 jx
+							   甘肃gs/内蒙nm/河北hb/青海qh/宁夏nx
+			comment 注释: 	描述变更目的
+
+
+		执行结果：观察数据表databasechangelog (ID+Author 对应记录是否存在，不存在则说明sql没有执行成功查看原因即可)
+
+
+		注意：
+			1.提供的初始化数据的主键必须使用固定值.
+			2.SQL中只需要提供正常DML语句即可，不需要有set define off/on 或 commit之类语句.
+			3.除了以下场景必须提供回退语句(并且顺序与sql的执行顺序对应)
+				(1)update
+				(2)delete
+				(3)alter table modify  扩充字段长度
+			4.同一个Changeset中的sql语句会作为绑定到同一个事务中处理.
+		**********************************************************************
+	 -->
+
+	<include file="sql.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

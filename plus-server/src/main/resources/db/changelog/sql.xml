@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!-- SQL书写示例
+
+        <changeSet id="1-20150811" author="zhangsan">
+            <comment>变更M9000防火墙服务组为服务</comment>
+            <sql>
+                <![CDATA[
+                       insert into TD_B_CONFIG (CONFIG_ID, CONFIGNAME, CONFIGDESC, PARAMNAME, VALUESEQ, PARAMVALUE, VALUEDESC, UPDATETIME, UPDATE_USER, RSRV_STR1, RSRV_STR2, RSRV_STR3, RSRV_DATE4, RSRV_DATE5)
+                    values ('20150810091134', 'SMP_DATAASSET_FRONT_CONFIG', '前台模糊化', 'DATEASSET_FRONT_URL', 0, 'http://10.21.16.116:8080/fbbaWebService/service', '流量审计前台模糊化接口', to_date('10-08-2015 00:01:00', 'dd-mm-yyyy hh24:mi:ss'), 'fumq3', null, null, null, null, null);
+                ]]>
+            </sql>
+        </changeSet>
+
+        <changeSet id="2-20150814" author="zhangsan" context="gd,fj">
+            <comment>前台模糊化菜单及接口配置</comment>
+            <sql>
+                <![CDATA[
+                    insert into TD_B_CONFIG (CONFIG_ID, CONFIGNAME, CONFIGDESC, PARAMNAME, VALUESEQ, PARAMVALUE, VALUEDESC, UPDATETIME, UPDATE_USER, RSRV_STR1, RSRV_STR2, RSRV_STR3, RSRV_DATE4, RSRV_DATE5)
+                    values ('20150810091134', 'SMP_DATAASSET_FRONT_CONFIG', '前台模糊化', 'DATEASSET_FRONT_URL', 0, 'http://10.21.16.116:8080/fbbaWebService/service', '流量审计前台模糊化接口', to_date('10-08-2015 00:01:00', 'dd-mm-yyyy hh24:mi:ss'), 'fumq3', null, null, null, null, null);
+                ]]>
+            </sql>
+        </changeSet>
+      -->
+
+
+
+</databaseChangeLog>
