@@ -1,6 +1,9 @@
 # Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+frontend:npm "-Dfrontend.npm.arguments=run watch" -f pom.xml
+启动maven frontend-maven-plugin 实时编译
+编译路径到target/classes/META-INF/resources
+
 
 ## Development server
 
